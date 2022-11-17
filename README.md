@@ -59,6 +59,8 @@ Taken together each of the components shall return three outputs for each post :
 - Negative label(s) detected in the post; and 
 - Hate word(s) found in the post.
 
-Using a tri-testing process, the API hopes to either pick out harmful posts for users to reconsider posting them or to raise awareness on hate words found within the post.
+Using a tri-testing process, the API hopes to: 
+1. pick out harmful posts for users to reconsider posting them; and/or 
+2. raise awareness on hate words found within the post.
 
 ## 5. Conclusion
