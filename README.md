@@ -57,9 +57,11 @@ Index | Model | Precision Macro Avg |  Recall Macro Avg | f-1 Macro Avg | Remark
 |4| Neural Network | 0.56 | 0.79 |0.66 | Clear overfitting  |
 |5| RNN | 0.71 | 0.82 |0.76 | Best Model based on f-1 score |
 
+The RNN model registering the highest f-1 score of 0.76 was chosen as the model for Streamlit. In short, precision measures how well the model performs out of all predictions while recall measures how well the model performs out of all actual labels.
+
 ### 4.3 Hate Words Detection
 
-English word(s), which are thought to be offensive in nature, were scraped from the [Hatebase](https://hatebase.org/) website, a public repository of hate words across various languages. 
+English word(s), which are thought to be offensive in nature, were scraped from the [Hatebase](https://hatebase.org/) website, a public repository of hate words across various languages.
 
 ### 4.4 Output
 
