@@ -47,6 +47,15 @@ Output of predominant emotion detected in the post by testing against the Huggin
 
 ### 4.2 Trained Multi-Label Classification Model
 
+Five models were tested. Below is a summary of the findings. 
+
+Index | Model | Precision Macro Avg |  Recall Macro Avg | f-1 Macro Avg | Remarks | 
+|:----:|:----|:----:|:----:| :----:| :----|
+|1| Binary Relevance & Naives Bayes | 0.73 | 0.74 |0.70 | Assumed labels are not related to each other |
+|2| Classifier Chain & Naives Bayes | 0.62 | 0.93 |0.74 | Produced good f-1 score at the expense of precision |
+|3| MLARAM | 0.62 | 0.51 |0.53 | Registered bad scores across  |
+|4| Neural Network | 0.56 | 0.79 |0.66 | Clear overfitting  |
+|5| RNN | 0.71 | 0.82 |0.76 | Best Model based on f-1 score |
 
 ### 4.3 Hate Words Detection
 
