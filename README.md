@@ -37,5 +37,8 @@ An overview of the project's approach is provided in the image below:
 
 ## 4. Summary
 
+The main objective of this project lies in the Streamlit API, which allows users to check their posts prior to submitting them online. The API can be assessed via this [link](https://soonpohchua91-streamlit-test-streamlit-app-j6eb7g.streamlit.app/)
+
+The Streamlit API is made up of three 
 
 ## 5. Conclusion
