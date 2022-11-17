@@ -77,6 +77,6 @@ Using a tri-testing process, the API hopes to:
 ## 5. Conclusion
 
 Although the project managed to successfully deploy a workable API in hope to tackle the issue of hate speech, the following limitations are still present:
-1. Background of Dataset: Data were gathered in United States and annotated by Americans.
-2. Important of Context in the Usage of Language: 
-3. Further Testing of Streamlit API: API needs to be further tested in order to pick out discrepancies for future refinement.
+1. **Background of Dataset**: Data were gathered in United States and annotated by Americans.
+2. **Important of Context in Language Usage**: The RNN attempted to draw relationship between words through vectorization technique. Given the complexity of language, it remains to be seen if a fixed approach is useful.
+3. **Further Testing of Streamlit API**: API needs to be further tested in order to pick out discrepancies for future refinement.
