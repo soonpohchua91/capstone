@@ -74,9 +74,14 @@ Using a tri-testing process, the API hopes to:
 1. pick out harmful posts for users to reconsider posting them; and/or 
 2. raise awareness on hate words found within the post.
 
-## 5. Conclusion
+## 5. Limitation
 
 Although the project managed to successfully deploy a workable API in hope to tackle the issue of hate speech, the following limitations are still present:
 1. **Background of Dataset**: Data were gathered in United States and annotated by Americans.
 2. **Important of Context in Language Usage**: The RNN attempted to draw relationship between words through vectorization technique. Given the complexity of language, it remains to be seen if a fixed approach is useful.
 3. **Further Testing of Streamlit API**: API needs to be further tested in order to pick out discrepancies for future refinement.
+
+## 6. Future Works
+
+1. **Making API more accessible**: There is no guarantee that one would use the Streamlit API, which involves them exiting their browser, in order to check their posts. Deploying the API using a widget embedded within each specific social media platform seems to be a better solution moving forward.
+2. **Incorporating Images**: Submitting posts on social media platforms does not merely involved words. There is potential for the project to include pictures submitted in conjunction with words.
