@@ -43,10 +43,9 @@ The Streamlit API has three main components:
 
 ### 4.1 Pre-Trained Emotion Model
 
-Output of predominant emotion detected in the post using the Hugging Face [Emotion English DistilRoBERTa-base](https://huggingface.co/j-hartmann/emotion-english-distilroberta-base?text=Oh+Happy+Day) pre-trained model.
+Output of predominant emotion detected in the post by testing against the Hugging Face [Emotion English DistilRoBERTa-base](https://huggingface.co/j-hartmann/emotion-english-distilroberta-base?text=Oh+Happy+Day) pre-trained model returning an output of seven emotions (anger, disgust, fear, joy, neutral, sadness and surprise).
 
 ### 4.2 Trained Multi-Label Classification Model
-
 
 
 ### 4.3 Hate Words Detection
