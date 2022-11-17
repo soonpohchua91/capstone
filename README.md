@@ -39,7 +39,7 @@ An overview of the project's approach is provided in the image below:
 
 The main objective of this project lies in the Streamlit API, which allows users to check their posts prior to submitting them online. The API can be assessed via this [link](https://soonpohchua91-streamlit-test-streamlit-app-j6eb7g.streamlit.app/).
 
-The Streamlit API has three main components:
+The Streamlit API has three components in total:
 
 ### 4.1 Pre-Trained Emotion Model
 
