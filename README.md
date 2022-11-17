@@ -57,7 +57,7 @@ Index | Model | Precision Macro Avg |  Recall Macro Avg | f-1 Macro Avg | Remark
 |4| Neural Network | 0.56 | 0.79 |0.66 | Clear overfitting  |
 |5| RNN | 0.71 | 0.82 |0.76 | Best Model based on f-1 score |
 
-The RNN model registering the highest f-1 score of 0.76 was chosen as the model for Streamlit. In short, precision measures how well the model performs out of all predictions while recall measures how well the model performs out of all actual labels.
+The RNN model registering the highest f-1 score of 0.76 was chosen as the model for Streamlit. In short, precision measures how well the model performs out of all predictions while recall measures how well the model performs out of all actual labels. Hence, in order to balance between eliminating false prediction and true labels not detected, f-1 score, which represents the harmonic mean of both precision and recall scores, is used to measure the effectiveness of each model.
 
 ### 4.3 Hate Words Detection
 
