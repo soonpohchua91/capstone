@@ -52,6 +52,8 @@ Output of predominant emotion detected in the post by testing against the Huggin
 
 English word(s), which are thought to be offensive in nature, were scraped from the [Hatebase](https://hatebase.org/) website, a public repository of hate words across various languages. 
 
+### 4.4 Output
+
 Taken together each of the components shall return three outputs for each post :
 - Negative emotion detected in post;
 - Negative label(s) detected in the post; and 
