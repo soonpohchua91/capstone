@@ -34,3 +34,5 @@ More importantly, given the accessibility of social media today, youths and chil
 An overview of the project's approach is provided in the image below: 
 
 ![image](image.png)
+
+## 4. Summary
