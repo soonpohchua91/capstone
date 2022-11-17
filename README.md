@@ -43,9 +43,15 @@ The Streamlit API has three main components:
 
 ### 4.1 Pre-Trained Emotion Model
 
+Output of predominant emotion detected in the post using the Hugging Face [Emotion English DistilRoBERTa-base](https://huggingface.co/j-hartmann/emotion-english-distilroberta-base?text=Oh+Happy+Day) pre-trained model.
+
 ### 4.2 Trained Multi-Label Classification Model
 
+
+
 ### 4.3 Hate Words Detection
+
+English word(s), which are thought to be offensive in nature, were scraped from the [Hatebase](https://hatebase.org/) website, a public repository of hate words across various languages. 
 
 Taken together each of the components shall return three outputs for each post :
 - Negative emotion detected in post;
