@@ -6,7 +6,6 @@ from nltk.stem.porter import PorterStemmer
 import pandas as pd
 import pickle
 import re
-from sklearn.feature_extraction.text import TfidfVectorizer
 import streamlit as st
 from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing import sequence
@@ -27,14 +26,14 @@ def stemming(x):
 # Streamlit UI
 
 st.title("Project Elimi-'Hate' Demo")
-st.write('Thank you for visiting this API. Write your post below and it can check if:')
+st.write('Thank you for visiting this API. Write your post below to check if:')
 st.write('1. The negative emotion that your post may contain;')
 st.write('2. Your post is potentially disrespectful, insulting, offensive, discriminating, humiliating, hateful or dehumanizing towards others; and')
 st.write('3. Your post contains any hate words from https://hatebase.org.')
 
 model = load_model('rnn_model.h5')
-token = pickle.loads(open('rnn_token','rb'))
-hatewords = json.load(open('hatewords.txt','r').read())
+token = pickle.load(open('rnn_token','rb'))
+hatewords = json.loads(open('hatewords.txt','r').read())
 
 form = st.form(key='sentiment-form')
 user_input = form.text_area('Enter your post here:')
@@ -60,7 +59,7 @@ if submit:
         result = model.predict(user_input1)
         result[(result < 0.5)] = 0
         result[(result >= 0.5)] = 1
-        result = pd.DataFrame(result, columns = ['disrespect', 'insult', 'offensive', 'inferiority', 'humiliation', 'hate_speech', 'dehumanizing'])
+        result = pd.DataFrame(result, columns = ['disrespectful', 'insulting', 'offensive', 'discriminating', 'humiliating', 'hateful', 'dehumanizing'])
         attributes = []
         for possible_attribute in result:
             if result[possible_attribute][0]: attributes.append(possible_attribute)
