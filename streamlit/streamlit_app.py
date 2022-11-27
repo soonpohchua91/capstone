@@ -34,7 +34,7 @@ st.write('3. Your post contains any hate words from https://hatebase.org.')
 
 model = load_model('rnn_model.h5')
 token = pickle.loads(open('rnn_token','rb'))
-hatewords = json.loads(open('hatewords.txt','r').read())
+hatewords = json.load(open('hatewords.txt','r').read())
 
 form = st.form(key='sentiment-form')
 user_input = form.text_area('Enter your post here:')
